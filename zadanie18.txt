@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery - Kacper Lewandowski 2P</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<h2 id="tekst">To jest tekst</h2>
+
+<button id="b1">Ukryj</button>
+<button id="b2">Pokaż</button>
+<button id="b3">Fade</button>
+<button id="b4">Slide</button>
+<button id="b5">Animacja</button>
+
+<div id="box" style="width:100px;height:100px;background:red;position:relative;"></div>
+
+<script>
+
+$("#b1").click(function(){
+    $("#tekst").hide();
+});
+
+$("#b2").click(function(){
+    $("#tekst").show();
+});
+
+$("#b3").click(function(){
+    $("#tekst").fadeToggle();
+});
+
+$("#b4").click(function(){
+    $("#tekst").slideToggle();
+});
+
+$("#b5").click(function(){
+    $("#box").animate({left: "100px"});
+});
+
+</script>
+
+</body>
+</html>
